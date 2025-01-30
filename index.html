@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title></title>
+    </head>
+
+    <body>
+        <main class="relative h-screen w-screen snap-y snap-mandatory overflow-y-auto overflow-x-hidden" id="controller">
+            <section class="relative h-screen w-screen snap-center" id="reception">
+                <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop-v3.png">
+                <div class="absolute text-center text-white top-[10vw]" style="font-family: Gotham SSm A;">
+                    <h2 class="text-5xl">Somos Tesla</h2>
+                    <p class="text-sm pt-[2vw] pb-[17vw] px-[30vw]">
+                        Estamos encantados de que te hayas unido a nuestra familia. En Tesla, no solo creamos automóviles, sino que también estamos comprometidos con la innovación, la sostenibilidad y el futuro de la energía. Tu llegada a nuestro equipo es un paso más hacia un futuro más limpio y tecnológico.
+                        Aquí, en Tesla, trabajamos juntos para desafiar los límites de lo que es posible, con el objetivo de acelerar la transición mundial hacia la energía sostenible. Tu trabajo será esencial para lograr esa misión y estamos emocionados de ver cómo contribuirás a nuestro continuo crecimiento y éxito.
+                    </p>
+                    <button class="text-sm rounded p-1 border-[3px] border-white hover:text-black hover:bg-white duration-300" onclick="document.getElementById('controller').scrollBy(0, 1)">Aprende más</button>
+                </div>
+            </section>
+
+            <script src="scripts.js"></script> 
+        </main>
+
+        <header class="flex fixed items-center top-0 w-screen px-3 py-2 justify-between text-white" style="font-family: Gotham SSm A;">
+            <div class="flex flex-grow basis-0 justify-start">
+                <svg class="w-[3.5cm]" viewBox="0 0 340 35" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"></path></svg>
+            </div>
+
+            <nav>
+                <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+                    <li><a href="#">Model S</a></li>
+                    <li><a href="#">Model 3</a></li>
+                    <li><a href="#">Model X</a></li>
+                    <li><a href="#">Model Y</a></li>
+                    <li><a href="#">Powerwall</a></li>
+                    <li><a href="#">Carga</a></li>
+                </ul>
+            </nav>
+
+            <nav class="flex flex-grow basis-0 justify-end">
+                <ul class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Menú</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
